@@ -1,0 +1,21 @@
+ <div id="newResignee">
+    <h1>
+      <b>New Resignee</b>
+    </h1>
+    <h5>Welcome back, please create new resignee</h5>
+    <br>
+    <div class="container">
+      <form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)">
+        <p class="head">Name</p>
+          <input formControlName="name" id="name" placeholder="Enter Name" />
+        <br><br>
+        <p class="head">Join Date</p>
+        <p>
+          <input formControlName="joinDate" type="joinDate" placeholder="Enter Join Date" />
+        </p>
+        <br><br>
+          <button class="btn btn-primary" id="createUser" type="submit" (click)="createUser">Create</button>
+      </form>
+      </div>
+  </div>
+

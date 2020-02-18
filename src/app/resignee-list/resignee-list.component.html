@@ -1,0 +1,26 @@
+<!--<table>
+  <thead>
+    <th>Employee Name</th>
+    <th>Join Date</th>
+    <th>Resign Date</th>
+    <th>Division</th>
+    <th>Cost Centre</th>
+    <th>Performance Rating</th>
+  </thead>-->
+  <p>this works!</p>
+  <ul class ="a">
+    <li *ngFor="let order of resigneeOrder">
+
+  
+      <li>{{order.name}} </li>
+      <li>{{order.joinDate}}</li>
+      <!--<td>{{resignee.payload.doc.data().resignDate}}</td>
+      <td>{{resignee.payload.doc.data().division}}</td>
+      <td>{{resignee.payload.doc.data().costCentre}}</td>
+      <td>{{resignee.payload.doc.data().performanceRating}}</td>-->
+        
+      <button (click)="delete(resignee.name)">Delete</button>
+      <p>this works too!</p>
+    
+  </ul>
+

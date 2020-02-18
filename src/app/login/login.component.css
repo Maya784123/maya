@@ -1,0 +1,48 @@
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 160px;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    margin-left: 300px;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 3b3b3b300px;
+    margin-left: -12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+      
+}
+
+.head{
+    font-weight: 500;
+    margin-left: -12px;
+
+}
+
+.btn-primary {
+    color: #FD71D3;
+    background-color: transparent;
+    border-color: #FD71D3;
+    width: 303px;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in, color 0.3s ease-in;
+    margin-left: -12px;
+}
+
+.btn-primary:hover{
+    color: #F9D763;
+    border-color:#F9D763;
+}
+
+#login {
+    margin-top: 83px;
+    margin-left: 374px;
+}

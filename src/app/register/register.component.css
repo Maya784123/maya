@@ -1,0 +1,52 @@
+.side-register{
+    margin-top: 27px;
+    margin-left: 374px;
+}
+
+.btn-primary {
+    background: none;
+    width: 200px;
+    border: 1px solid #FD71D3;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FD71D3;
+    margin-top: 10px;
+    outline: none;
+    transition: border-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+p{
+    color: #BDCCDB;
+    font-weight: bold;
+}
+
+.row {
+    color: #BDCCDB;
+}
+
+.btn-primary:hover{
+    border-color: #F9D763;
+    color: #F9D763;
+    background: none;
+}
+
+h2{
+    font-weight: 700;
+    color: #BDCCDB;
+}
+
+h3{
+    font-weight: 500;
+    color: rgb(231, 231, 231);
+
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: rgb(208, 210, 213);
+    font-size: 15px;
+    background: none;
+    color: #BDCCDB;
+}
+

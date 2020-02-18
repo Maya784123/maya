@@ -1,0 +1,24 @@
+<div id="login">
+  <h1>
+    <b>Login</b>
+  </h1>
+  <h5>Welcome back, please sign into your account</h5>
+  <br>
+  <div class="container">
+    <form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)">
+      <p class="head">EMAIL</p>
+        <input formControlName="email" id="email" placeholder="Enter email" />
+      <br><br>
+      <p class="head">PASSWORD</p>
+      <p>
+        <input formControlName="password" type="password" placeholder="Enter password" />
+      </p>
+      <br><br>
+        <button class="btn btn-primary" id="log" type="submit">Login</button>
+        
+        <br>
+        <button class="btn btn-primary" id="reg" routerLink="../register">Register</button>
+        
+    </form>
+  </div>
+  </div>

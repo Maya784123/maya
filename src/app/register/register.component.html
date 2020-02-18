@@ -1,0 +1,48 @@
+<div class="register">
+  <h2>Sign Up</h2>
+  <h3>Join the family!</h3> 
+  <form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)">
+    <br>
+    <p>EMAIL</p>
+    <input formControlName="email" id="email" placeholder="Enter Email"/>
+    <br><br>
+    <p>FULL NAME</p>
+    <p><input formControlName="name" type="text" id="name" placeholder="Enter Full Name" /></p>
+    <br>
+    <p>PASSWORD</p>
+    <p><input formControlName="password" type="password" id="password" placeholder="Enter Password" /></p>
+    <br>
+    <div class="row">
+    <div class ="col-sm-6 col-sm-offset-3">
+      <input type ="checkbox" id="tnc" (click)="toggleAgree()"/> I agree to the <a id="open-content" (click)="open(content)">terms and conditions</a>.
+    </div>
+  </div>
+  <p><button class="btn btn-primary" [disabled]="!agreed" type="submit">Register</button></p>
+</form>
+</div>
+
+<ng-template class="content" #content let-modal>
+
+  <div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Terms and Conditions</h4>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+
+  <div class="modal-body">
+  <p> By registering here and creating your profile, you can access
+ different services that are offered by us without having to register for each
+ service separately. If a service you wish to subscribe to has additional
+ terms and conditions, you will be asked to accept these separately. You agree
+ that: (1) you will keep your username and password safe, and won't share them
+ with anyone. (2) you will not pass yourself off as someone else or create
+ multiple, false accounts.</p>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" 
+    (click)="modal.close('Save click')">Close</button>
+  </div>
+
+ </ng-template>
