@@ -28,7 +28,7 @@
     "commander": "^4.1.0",
     "core-js": "^2.5.4",
     "firebase": "^7.7.0",
-    "firebase-admin": "^8.9.1",
+    "firebase-admin": "^11.8.0",
     "ng2-charts": "^2.2.5",
     "plotly.js": "^1.52.2",
     "rxjs": "~6.2.0",
